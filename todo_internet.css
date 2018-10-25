@@ -1,0 +1,139 @@
+body {
+  background: url(https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9e2448175103d36c873e2511d112d339&auto=format&fit=crop&w=1350&q=80) ;
+  color: #333;
+  font-family: sans-serif;
+}
+.container {
+  display: block;
+  width: 400px;
+  margin: 100px auto 0;
+}
+
+/* idea ja koodi kello varten https://codepen.io/lolazers/pen/jzOGgE?page=3  */
+
+#clock {
+  font-weight: normal;
+  font-size: 60px;
+  color: grey;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#date {
+  color: #72C0DC;
+  font-size: 1.1rem;
+  padding-bottom: 9px;
+  border-bottom: 1px solid;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li * {
+  float: left;
+}
+li, h3 {
+  clear:both;
+  list-style:none;
+}
+input, button {
+  outline: none;
+}
+button {
+  background: none;
+  border: 0px;
+  color: #313030;
+  font-size: 15px;
+  width: 60px;
+  margin: 10px 0 0;
+  font-family: sans-serif;
+  cursor: pointer;
+  margin-top: 0px;
+  font-weight: 600;
+}
+button:hover {
+  color: #343;
+}
+
+ /* hederi */
+
+h3,
+label[for='input'] {
+  color: #313030;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #313030;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+input[type="text"] {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: transparent;
+  border-radius: 6px;
+  font-family: sans-serif;
+  color: #888;
+}
+input[type="text"]:focus {
+  color: #333;
+}
+
+/* Uusi tehtävä */
+
+label[for='input'] {
+  display: block;
+  margin: 0 0 18px;
+}
+
+input#input {
+  float: left;
+  width: 318px;
+}
+
+p > button:hover {
+  color: white;
+}
+
+/* tehtävä lista */
+
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+li > input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+}
+
+li > label {
+  font-size: 20px;
+  line-height: 40px;
+  width: 237px;
+  padding: 0 0 0 10px;
+}
+
+li >  input[type="text"] {
+  width: 226px;
+}
+
+li > .delete:hover {
+  color: red;
+}
+
+/* tehdyt tehtävät */
+
+#completed-tasks label {
+  text-decoration: line-through;
+  color: #888;
+}
